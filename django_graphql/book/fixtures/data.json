@@ -1,0 +1,45 @@
+[
+	{
+		"model":"book.author",
+		"pk":1,
+		"fields":{
+			"name": "Ibaakee Ledum",
+			"age": 23
+		}
+	},
+	{
+		"model":"book.author",
+		"pk":2,
+		"fields":{
+			"name": "Krisha Jaeger",
+			"age": 26
+		}
+	},
+	{
+		"model":"book.book",
+		"pk":1,
+		"fields":{
+			"name": "The art of floating",
+			"genre": "Fantasy",
+			"author": 2
+		}
+	},
+	{
+		"model":"book.book",
+		"pk":2,
+		"fields":{
+			"name": "Up and about",
+			"genre": "Comedy",
+			"author": 1
+		}
+	},
+	{
+		"model":"book.book",
+		"pk":3,
+		"fields":{
+			"name": "StarGate",
+			"genre": "Sci-Fi",
+			"author": 2
+		}
+	}
+]

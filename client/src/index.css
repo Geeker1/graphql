@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #eee;
+  /*padding: 10px;*/
+  background-color: rgba(48, 54, 56, 1);
+  color: #fff;
+  font-family: 'Arvo', serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Oswald', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#main .book{
+  display: flex;
+  flex-direction: column;
+}
+
+#main > h1, #main > h3{
+  text-align: center;
+}
+
+.book-list{
+  /*width: 1000px;*/
+  display: flex;
+  /*max-width: 100%;*/
+  height: 60vh;
+  border-bottom: 2px solid #fff;
+}
+
+#book{
+  border-right: 2px solid #fff;
+}
+
+.book-detail{
+  /*width: 400px;*/
+  flex-basis: 1000px;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.book-list ul.book-list-ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+#book-detail-wrapper .other-books{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+}
+
+.book-list ul > li{
+  border: 2px solid #fff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.book-list ul > li:hover{
+  background-color: rgba(48, 80, 56, 1);
+  cursor: pointer;
+}
+
+.add-form{
+  display: flex;
+  justify-content: center;
+}
+
+form > input, select{
+  margin-bottom: 10px;
+}
+
+form#add-book{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input, input:focus, input:active{
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+  box-sizing: border-box;
+  outline: none;
+  border:none;
+}
+
+input:focus, input:active{
+  border: 1px solid #000;
+}
+
+form .btn{
+  background-color: #eee;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-top: none;
+  border-left: none;
+}
+
+form .btn:hover{
+  background-color: hsl(203, 80%, 35%);
+  border: 1px solid #fff;
+  cursor: pointer;
+}
